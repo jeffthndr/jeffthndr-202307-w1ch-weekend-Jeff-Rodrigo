@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "weekend1/sass:weekend1/css --w --no-source-map",
+    "sass": "sass weekend1/_scss:weekend1/css -w --no-source-map",
     "prepare": "husky install"
   },
   "author": "Jeff y Rodri",
