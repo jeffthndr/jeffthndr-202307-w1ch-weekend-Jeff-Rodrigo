@@ -1,11 +1,12 @@
 {
-  "name": "week1dia5",
+  "name": "weekend1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass sass:css --watch"
+    "sass": "sass sass:css --watch",
+    "prepare": "husky install"
   },
   "author": "Jeff y Rodri",
   "license": "ISC",
