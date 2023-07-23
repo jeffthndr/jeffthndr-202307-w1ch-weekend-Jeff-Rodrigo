@@ -8,9 +8,13 @@
 body {
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-header {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +22,7 @@ header {
   width: 100vw;
   height: 72px;
 }
-header .page-title {
+.navbar .logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,34 +30,34 @@ header .page-title {
   width: 179px;
   height: 32px;
 }
-header .page-title .header-buttons {
-  display: none;
-}
-header .page-title .company-logo {
+.navbar .logo .logo-mark {
   width: 32px;
 }
-header .page-title .company-name {
+.navbar .logo .landing-page {
   display: flex;
   flex-direction: row;
   width: 141px;
   height: 27px;
   margin: 0%;
 }
-header .page-title .company-name .first-name {
+.navbar .logo .landing-page .first-name {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 0%;
   font-size: 21px;
   height: 27.3px;
 }
-header .page-title .company-name .second-name {
+.navbar .logo .landing-page .second-name {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 21px;
   height: 27.3px;
 }
+.navbar .navigation-menu {
+  display: none;
+}
 
-.user-info {
+.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,7 +70,7 @@ header .page-title .company-name .second-name {
   padding-block-start: 30px;
   padding-block-end: 30px;
 }
-.user-info .start-info {
+.hero-section .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +79,7 @@ header .page-title .company-name .second-name {
   width: 315px;
   height: 329px;
 }
-.user-info .start-info .text-content {
+.hero-section .header .text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +88,7 @@ header .page-title .company-name .second-name {
   height: 239px;
   gap: 20px;
 }
-.user-info .start-info .text-content .title {
+.hero-section .header .text-content .title {
   width: 315px;
   height: 147px;
   font-family: "Poppins", sans-serif;
@@ -93,7 +97,7 @@ header .page-title .company-name .second-name {
   line-height: 49.4px;
   text-align: center;
 }
-.user-info .start-info .text-content .paragrph {
+.hero-section .header .text-content .paragrph {
   width: 315px;
   height: 72px;
   font-family: "Mulish", sans-serif;
@@ -102,7 +106,7 @@ header .page-title .company-name .second-name {
   line-height: 24px;
   text-align: center;
 }
-.user-info .start-info .get-start-button {
+.hero-section .header .ctas .get-start-button {
   width: 221px;
   height: 60px;
   border-radius: 20px;
@@ -120,27 +124,524 @@ header .page-title .company-name .second-name {
   border: 0px none;
   color: #ffffff;
 }
-.user-info .start-info .get-start-button .icon {
+.hero-section .header .ctas .get-start-button .icon {
   width: 20px;
   size: 16;
   background-color: #009379;
 }
+.hero-section .header .ctas .How-it-works {
+  display: none;
+}
 
-@media (min-width: 800px) {
-  .header {
+.projects {
+  display: flex;
+  width: 100vw;
+  height: 1665px;
+  padding-inline-start: 60px;
+  padding-inline-end: 60px;
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .headline-and-subhead {
+  display: flex;
+  width: 315px;
+  height: 117px;
+  gap: 20px;
+  flex-direction: column;
+}
+.projects .headline-and-subhead .title-one {
+  width: 315px;
+  height: 49px;
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.projects .headline-and-subhead .title-two {
+  display: none;
+}
+.projects .headline-and-subhead .text {
+  width: 315px;
+  height: 48px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.projects .cards-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+.projects .cards-row .project-card {
+  width: 315px;
+  height: 446px;
+  padding: 0px 0px 30px 0px;
+  border-radius: 20px;
+  gap: 30px;
+  background-color: #ffffff;
+}
+.projects .cards-row .project-card .imag-placeholder {
+  width: 315px;
+  height: 278px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.projects .cards-row .project-card .text {
+  width: 315px;
+  height: 108px;
+  padding: 0px 30px 0px 30px;
+  gap: 12px;
+  background-color: #ffffff;
+}
+.projects .cards-row .project-card .text .proyect-title {
+  width: 255px;
+  height: 36px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #2d2d2d;
+  background-color: #ffffff;
+}
+.projects .cards-row .project-card .text .description {
+  width: 255px;
+  height: 24px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2d2d2d;
+  background-color: #ffffff;
+}
+.projects .cards-row .project-card .text .category {
+  width: 255px;
+  height: 24px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2d2d2d;
+  background-color: #ffffff;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 1471.17px;
+  padding: 100px 32px 100px 32px;
+  gap: 60px;
+  background-color: #f8d57e;
+}
+.testimonials .headline-and-subhead {
+  display: flex;
+  flex-direction: column;
+  width: 311px;
+  height: 215px;
+  gap: 20px;
+  background-color: #f8d57e;
+}
+.testimonials .headline-and-subhead .title {
+  width: 311px;
+  height: 147px;
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  background-color: #f8d57e;
+}
+.testimonials .headline-and-subhead .paragrph {
+  width: 311px;
+  height: 48px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #f8d57e;
+}
+.testimonials .cards-row {
+  display: flex;
+  flex-direction: column;
+  width: 311px;
+  height: 468.08px;
+  border-radius: 20px;
+  gap: 30px;
+}
+.testimonials .cards-row .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  width: 311px;
+  height: 468.08px;
+  padding: 40px 30px 40px 30px;
+  border-radius: 20px;
+  border: 1px;
+  gap: 30px;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 251px;
+  height: 388.08px;
+  gap: 30px;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .client-info {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 191px;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .client-info .img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .client-info .person-details {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 55px;
+  gap: 6px;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .client-info .person-details .title {
+  width: 180px;
+  height: 27px;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .client-info .person-details .details {
+  width: 180px;
+  height: 22px;
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .text {
+  display: flex;
+  flex-direction: column;
+  width: 251px;
+  height: 167.08px;
+  gap: 24px;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .text .paragrph {
+  width: 251px;
+  height: 120px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .text .stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 251px;
+  height: 23.08px;
+  gap: 5px;
+}
+.testimonials .cards-row .testimonial-card .testimonial-info .text .stars .star {
+  width: 24px;
+  height: 23.084608078px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 1678px;
+  padding-inline-start: 60px;
+  padding-inline-end: 60px;
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+  gap: 40px;
+}
+.pricing .headline-and-subhead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 315px;
+  height: 160px;
+  gap: 20px;
+}
+.pricing .headline-and-subhead .title {
+  width: 315px;
+  height: 98px;
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.pricing .headline-and-subhead .paragrph {
+  width: 315px;
+  height: 42px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.pricing .headline-and-subhead .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 315px;
+  height: 1358px;
+  gap: 30px;
+}
+.pricing .cards-row .pricing-card {
+  display: flex;
+  padding: 40px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  width: 315px;
+  height: 450px;
+  border-radius: 20px;
+  gap: 30px;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 280px;
+  gap: 24px;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 161px;
+  gap: 6px;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .category {
+  width: 255px;
+  height: 32px;
+  font-family: Mulish;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 12px;
+  align-self: stretch;
+  padding: 0px;
+  width: 255px;
+  height: 65px;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .pricing .price {
+  width: 65px;
+  height: 65px;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .pricing .green {
+  background-color: #009379;
+  color: #ffffff;
+  width: 95px;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .pricing .profesional {
+  width: 85px;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .pricing .type {
+  width: 178px;
+  height: 26px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .pricing .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .description {
+  color: #2d2d2d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: left;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-info .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 21px;
+  gap: 12px;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-features .pricing-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  align-self: stretch;
+  padding: 0;
+  width: 255px;
+  height: 21px;
+  gap: 12px;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-features .pricing-card .check {
+  width: 20px;
+  height: 20px;
+  color: #009379;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-features .pricing-card .features-details {
+  color: #2d2d2d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  background-color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-features .pricing-card .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .pricing-features .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .text .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+.pricing .cards-row .pricing-card .button {
+  display: flex;
+  height: 60px;
+  padding: 16px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 20px;
+  background-color: #e5f4f2;
+  color: #009379;
+  border: 0px none;
+}
+.pricing .cards-row .pricing-card .get-start-button {
+  display: flex;
+  height: 60px;
+  padding: 16px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 20px;
+  color: #009379;
+  background-color: #ffffff;
+  border: 0px none;
+}
+.pricing .cards-row .pricing-card .get-start-button .img {
+  background-color: #ffffff;
+}
+.pricing .cards-row .green {
+  background-color: #009379;
+  color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
     display: flex;
     padding: 20px 50px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
   }
-  .header .header-buttons {
+  .navbar .navigation-menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 50px;
   }
-  .header .header-buttons .contact {
+  .navbar .navigation-menu .contact {
     display: flex;
     height: 30px;
     justify-content: center;
@@ -148,8 +649,9 @@ header .page-title .company-name .second-name {
     gap: 8px;
     border-radius: 20px;
     color: #009379;
+    border: 0px none;
   }
-  .header .header-buttons .How-it-works {
+  .navbar .navigation-menu .How-it-works {
     display: flex;
     height: 60px;
     padding: 16px 50px;
@@ -159,8 +661,9 @@ header .page-title .company-name .second-name {
     border-radius: 20px;
     background: #e5f4f2;
     color: #009379;
+    border: 0px none;
   }
-  .header .header-buttons .get-start-button {
+  .navbar .navigation-menu .get-start-button {
     width: 221px;
     height: 60px;
     border-radius: 20px;
@@ -178,6 +681,280 @@ header .page-title .company-name .second-name {
     border: 0px none;
     color: #ffffff;
   }
+  .navbar .navigation-menu .get-start-button .icon {
+    width: 20px;
+    size: 16;
+    background-color: #009379;
+  }
+  .hero-section {
+    display: flex;
+    width: 1280px;
+    padding: 120px 55px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .hero-section .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .hero-section .header .text-content {
+    display: flex;
+    width: 648px;
+    height: 258px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .hero-section .header .text-content .title {
+    width: 648px;
+    height: 174px;
+    font-size: 67px;
+    line-height: 87.1px;
+    text-align: start;
+  }
+  .hero-section .header .text-content .paragrph {
+    width: 648px;
+    height: 64px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    text-align: start;
+  }
+  .hero-section .header .ctas {
+    width: 441px;
+    height: 60px;
+    gap: 18px;
+  }
+  .hero-section .header .ctas .How-it-works {
+    display: inline-block;
+    width: 202px;
+    height: 60px;
+    padding: 16px 50px 16px 50px;
+    border-radius: 20px;
+    border: 1px solid #009379;
+    gap: 8px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #009379;
+  }
+  .projects {
+    width: 1280px;
+    height: 847px;
+    gap: 60px;
+    padding-inline-start: 120px;
+    padding-inline-end: 120px;
+    padding-block-start: 55px;
+    padding-block-end: 55px;
+  }
+  .projects .headline-and-subhead {
+    width: 1170px;
+    height: 93px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .headline-and-subhead .title-one {
+    display: none;
+  }
+  .projects .headline-and-subhead .title-two {
+    display: flex;
+    width: 453px;
+    height: 49px;
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #000000;
+  }
+  .projects .headline-and-subhead .text {
+    width: 1170px;
+    height: 24px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2d2d2d;
+  }
+  .projects .cards-row {
+    width: 1170px;
+    height: 454px;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .projects .cards-row .project-card {
+    display: flex;
+    width: 370px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .projects .cards-row .project-card .imag-placeholder {
+    width: 370px;
+    height: 278px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+  }
+  .projects .cards-row .project-card .text {
+    width: 370px;
+    height: 116px;
+    gap: 12px;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+    gap: 12px;
+  }
+  .projects .cards-row .project-card .text .proyect-title {
+    width: 310px;
+    height: 36px;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  .projects .cards-row .project-card .text .description {
+    width: 310px;
+    height: 32px;
+    font-family: Mulish;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .projects .cards-row .project-card .text .category {
+    width: 310px;
+    height: 24px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .testimonials {
+    width: 100vw;
+    height: 664px;
+    padding: 120px 55px 120px 55px;
+    gap: 60px;
+  }
+  .testimonials .headline-and-subhead {
+    width: 1170px;
+    height: 93px;
+    gap: 20px;
+  }
+  .testimonials .headline-and-subhead .title {
+    width: 1170px;
+    height: 49px;
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+  .testimonials .headline-and-subhead .paragrph {
+    width: 1170px;
+    height: 24px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .testimonials .cards-row {
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    height: 271px;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: #f8d57e;
+  }
+  .testimonials .cards-row .testimonial-card {
+    width: 570px;
+    height: 271px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px;
+    gap: 30px;
+  }
+  .testimonials .cards-row .testimonial-card .testimonial-info {
+    display: flex;
+    flex-direction: row;
+    width: 490px;
+    height: 191px;
+    gap: 30px;
+  }
+  .testimonials .cards-row .testimonial-card .testimonial-info .text {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 280px;
+    height: 143.08px;
+    gap: 24px;
+  }
+  .testimonials .cards-row .testimonial-card .testimonial-info .text .paragrph {
+    width: 280px;
+    height: 96px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .testimonials .cards-row .testimonial-card .testimonial-info .text .stars {
+    justify-content: flex-start;
+  }
+  .pricing {
+    width: 1280px;
+    height: 814px;
+    padding: 120px 55px 120px 55px;
+    gap: 60px;
+  }
+  .pricing .headline-and-subhead {
+    width: 100vw;
+    height: 90px;
+    gap: 20px;
+  }
+  .pricing .headline-and-subhead .title {
+    width: 100vw;
+    height: 49px;
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+  .pricing .headline-and-subhead .paragrph {
+    width: 1170px;
+    height: 21px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .pricing .cards-row {
+    width: 1170px;
+    height: 424px;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
