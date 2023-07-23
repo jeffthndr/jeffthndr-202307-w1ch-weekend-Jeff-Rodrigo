@@ -1,9 +1,5 @@
-/*# sourceMappingURL=styles.css.map */
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  background-color: #f8f9ff;
+  margin: 0;
 }
 
 body {
@@ -321,14 +317,25 @@ body {
   height: 120px;
   border-radius: 50%;
 }
-.testimonials .cards-row .testimonial-card .testimonial-info .client-info .person-details {
+.testimonials
+  .cards-row
+  .testimonial-card
+  .testimonial-info
+  .client-info
+  .person-details {
   display: flex;
   flex-direction: column;
   width: 180px;
   height: 55px;
   gap: 6px;
 }
-.testimonials .cards-row .testimonial-card .testimonial-info .client-info .person-details .title {
+.testimonials
+  .cards-row
+  .testimonial-card
+  .testimonial-info
+  .client-info
+  .person-details
+  .title {
   width: 180px;
   height: 27px;
   font-family: Poppins;
@@ -338,7 +345,13 @@ body {
   letter-spacing: 0em;
   text-align: center;
 }
-.testimonials .cards-row .testimonial-card .testimonial-info .client-info .person-details .details {
+.testimonials
+  .cards-row
+  .testimonial-card
+  .testimonial-info
+  .client-info
+  .person-details
+  .details {
   width: 180px;
   height: 22px;
   font-family: Mulish;
@@ -373,7 +386,13 @@ body {
   height: 23.08px;
   gap: 5px;
 }
-.testimonials .cards-row .testimonial-card .testimonial-info .text .stars .star {
+.testimonials
+  .cards-row
+  .testimonial-card
+  .testimonial-info
+  .text
+  .stars
+  .star {
   width: 24px;
   height: 23.084608078px;
 }
@@ -569,7 +588,13 @@ body {
   color: #009379;
   background-color: #ffffff;
 }
-.pricing .cards-row .pricing-card .text .pricing-features .pricing-card .features-details {
+.pricing
+  .cards-row
+  .pricing-card
+  .text
+  .pricing-features
+  .pricing-card
+  .features-details {
   color: #2d2d2d;
   font-family: Mulish;
   font-size: 16px;
@@ -956,6 +981,107 @@ body {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+.our-features-info {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  padding-inline-start: 60px;
+  padding-inline-end: 60px;
+  padding-block-end: 30px;
+}
+.our-features-info .page-title {
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.our-features-info .our-feature-title {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.our-features-info .our-feature-pargraph {
+  display: flex;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin: 0px;
+}
+.our-features-info .row-items {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  align-self: stretch;
+  list-style: none;
+  padding-inline-start: 60px;
+  padding-inline-end: 60px;
+  padding-block-end: 30px;
+}
+.our-features-info .row-items .first-row {
+  margin: 0px;
+  font-family: Mulish;
+  display: flex;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #e5f4f2;
+  gap: 20px;
+  background: #fff;
+  font-size: 21px;
+  line-height: 250%;
+  align-self: stretch;
+}
+.our-features-info .row-items .second-row {
+  margin: 0px;
+  font-family: Mulish;
+  display: flex;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  gap: 20px;
+  border-color: #e5f4f2;
+  background: #fff;
+  font-size: 21px;
+  line-height: 250%;
+  align-self: stretch;
+}
+.our-features-info .row-items .third-row {
+  margin: 0px;
+  font-family: Mulish;
+  display: flex;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  gap: 20px;
+  border-color: #e5f4f2;
+  background: #fff;
+  font-size: 20px;
+  line-height: 250%;
+  align-self: stretch;
+}
+.our-features-info .row-items .fourth-row {
+  margin: 0px;
+  font-family: Mulish;
+  display: flex;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  gap: 20px;
+  border-color: #e5f4f2;
+  background: #fff;
+  font-size: 20px;
+  line-height: 250%;
+  align-self: stretch;
 }
 
 /*# sourceMappingURL=styles.css.map */
